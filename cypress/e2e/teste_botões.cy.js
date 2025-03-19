@@ -1,6 +1,10 @@
 describe('template spec', () => {
-  it('passes', () => {
+  beforeEach(() => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
+    cy.get('[data-test="login-button"]').click();
+  })
+
+  it('passes', () => {
     cy.contains('a', 'Ver pets').click();
     cy.get('a[aria-label="Tela inicial"]').click();
     cy.get('a[aria-label="Ir para Mensagens"]').click();

@@ -1,3 +1,9 @@
+Cypress.Commands.add('login', (email, password) => { 
+  cy.get('[name="email"]').type(email);
+  cy.get('[name="password"]').type(password);
+  cy.get('[data-test="submit-button"]').click();
+})
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite

@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-03-18T14:06:16.110Z",
+    "end": "2025-03-18T14:06:22.943Z",
+    "duration": 6833,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3acb018-9e12-47bd-a26f-9e9409baaddc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\teste_botões.cy.js",
+      "file": "cypress\\e2e\\teste_botões.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "69e89ff9-4cc6-4f23-a04e-50fc5bcb2676",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 5419,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Ver pets').click();\ncy.get('a[aria-label=\"Tela inicial\"]').click();\ncy.get('a[aria-label=\"Ir para Mensagens\"]').click();\ncy.get('[name=\"email\"]').type('luiz@example.com');\ncy.get('[name=\"password\"]').type('Teste123456');\ncy.contains('button', 'Entrar').click();\ncy.get('.card__contact').first().click();\n//cy.contains('a', 'Cadastrar').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Ver pets' within the selector: 'a' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Ver pets' within the selector: 'a' but never did.\n    at Context.eval (webpack://curso_cypress/./cypress/e2e/teste_botões.cy.js:8:7)",
+                "diff": null
+              },
+              "uuid": "3f8187b0-6f5c-4607-b327-6aa4bb81c311",
+              "parentUUID": "69e89ff9-4cc6-4f23-a04e-50fc5bcb2676",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3f8187b0-6f5c-4607-b327-6aa4bb81c311"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5419,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "mochawesome.html",
+        "overwrite": false,
+        "html": true,
+        "jsonFile": false,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
